@@ -1,4 +1,4 @@
-import { downloadPlugin } from "/js/zipper.js"
+import { downloadPlugin } from "/srpg-plugins/js/zipper.js"
 
 document.getElementById("automatic-stats").addEventListener("click", function() {
     let fileName = "Automatic Stats for Enemy Units.zip"
@@ -14,14 +14,26 @@ document.getElementById("combat-arts").addEventListener("click", function() {
     let fileName = "Combat Arts.zip"
     let filesToZip = []
     filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Combat%20Art/%24readme.txt"))
+    filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Combat%20Art/ca-attack-ui.js"))
+    filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Combat%20Art/ca-attack.js"))
+    filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Combat%20Art/ca-attackend.js"))
+    filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Combat%20Art/ca-command-states.js"))
+    filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Combat%20Art/ca-command-ui-sentences.js"))
+    filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Combat%20Art/ca-command-ui.js"))
     filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Combat%20Art/ca-command.js"))
+    filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Combat%20Art/ca-control-attack.js"))
+    filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Combat%20Art/ca-control-cost.js"))
+    filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Combat%20Art/ca-control-events.js"))
+    filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Combat%20Art/ca-control-range.js"))
+    filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Combat%20Art/ca-control-skills.js"))
+    filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Combat%20Art/ca-control-validator.js"))
     filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Combat%20Art/ca-control.js"))
     filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Combat%20Art/ca-error.js"))
     filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Combat%20Art/ca-eventcommand.js"))
-    filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Combat%20Art/ca-menu.js"))
-    filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Combat%20Art/ca-other.js"))
-    filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Combat%20Art/ca-window.js"))
+    filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Combat%20Art/ca-window-unitmenu.js"))
     filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Combat%20Art/config.js"))
+    filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Combat%20Art/stat-stamina-eventcommand.js"))
+    filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Combat%20Art/stat-stamina.js"))
     downloadPlugin(fileName, filesToZip)
 })
 

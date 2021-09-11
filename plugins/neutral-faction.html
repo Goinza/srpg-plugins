@@ -183,30 +183,30 @@
         </div>
 
         <script type="module">
-            import { downloadPlugin } from "/js/zipper.js"
+            import { downloadPlugin } from "/srpg-plugins/js/zipper.js"
             document.getElementById("neutral-faction").addEventListener("click", function() {
-            let fileName = "Neutral Faction.zip"
-            let filesToZip = []
-            filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Neutral%20Faction/%24Example%20assets.zip"))
-            filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Neutral%20Faction/%24readme.txt"))
-            filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Neutral%20Faction/_settings.js"))
-            filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Neutral%20Faction/eventcommand-neutralaffiliation.js"))
-            filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Neutral%20Faction/filter-control-calls.js"))
-            filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Neutral%20Faction/filter-control.js"))
-            filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Neutral%20Faction/neutral-blockers.js"))
-            filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Neutral%20Faction/neutral-charchip.js"))
-            filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Neutral%20Faction/neutral-constants.js"))
-            filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Neutral%20Faction/neutral-control.js"))
-            filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Neutral%20Faction/neutral-error.js"))
-            filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Neutral%20Faction/neutral-motion.js"))
-            filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Neutral%20Faction/neutral-music.js"))
-            filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Neutral%20Faction/neutral-turn.js"))
-            filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Neutral%20Faction/neutral-ui.js"))
-            filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Neutral%20Faction/objective-window.js"))
-            filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Neutral%20Faction/player-to-neutral-calls.js"))
-            filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Neutral%20Faction/turn-control.js"))
-            filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Neutral%20Faction/unitmenu-cycling.js"))
-            downloadPlugin(fileName, filesToZip)
+                let fileName = "Neutral Faction.zip"
+                let filesToZip = []
+                filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Neutral%20Faction/%24Example%20assets.zip"))
+                filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Neutral%20Faction/%24readme.txt"))
+                filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Neutral%20Faction/_settings.js"))
+                filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Neutral%20Faction/eventcommand-neutralaffiliation.js"))
+                filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Neutral%20Faction/filter-control-calls.js"))
+                filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Neutral%20Faction/filter-control.js"))
+                filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Neutral%20Faction/neutral-blockers.js"))
+                filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Neutral%20Faction/neutral-charchip.js"))
+                filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Neutral%20Faction/neutral-constants.js"))
+                filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Neutral%20Faction/neutral-control.js"))
+                filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Neutral%20Faction/neutral-error.js"))
+                filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Neutral%20Faction/neutral-motion.js"))
+                filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Neutral%20Faction/neutral-music.js"))
+                filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Neutral%20Faction/neutral-turn.js"))
+                filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Neutral%20Faction/neutral-ui.js"))
+                filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Neutral%20Faction/objective-window.js"))
+                filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Neutral%20Faction/player-to-neutral-calls.js"))
+                filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Neutral%20Faction/turn-control.js"))
+                filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Neutral%20Faction/unitmenu-cycling.js"))
+                downloadPlugin(fileName, filesToZip)
         })
         </script>
     </body>

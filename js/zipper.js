@@ -1,4 +1,4 @@
-import { downloadZip } from "/js/modules/client-zip/index.js"
+import { downloadZip } from "/srpg-plugins/js/modules/client-zip/index.js"
 
 async function downloadPlugin (fileName, filesToZip) {
     const blob = await downloadZip(filesToZip).blob() 
