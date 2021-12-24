@@ -221,3 +221,15 @@ document.getElementById("original-data").addEventListener("click", function() {
     filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Weapons%20and%20Items%20as%20Original%20Data/magic-window.js"))
     downloadPlugin(fileName, filesToZip)
 })
+
+document.getElementById("double-attack").addEventListener("click", function() {
+    let fileName = "Double Attack Command.zip"
+    let filesToZip = []
+    filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Double%20Attack%20Command/%24readme.txt"))
+    filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Double%20Attack%20Command/_settings.js"))
+    filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Double%20Attack%20Command/da-command-states.js"))
+    filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Double%20Attack%20Command/da-command-ui.js"))
+    filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Double%20Attack%20Command/da-command.js"))
+    filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Double%20Attack%20Command/da-control.js"))
+    downloadPlugin(fileName, filesToZip)
+})

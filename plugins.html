@@ -27,6 +27,9 @@
                 <a href="#plugin4" class="generic-link">Changes to Damage Formula for Weapons</a>
             </li>
             <li>
+                <a href="#plugin17" class="generic-link">Double Attack Command</a>
+            </li>
+            <li>
                 <a href="#plugin5" class="generic-link">Enemy Display</a>
             </li>
             <li>
@@ -343,6 +346,68 @@
 
         <div class="uneven-item">
             <a href="#start" id="plugin5" class="generic-link">Go back</a>
+            <h2>Double Attack Command</h2>
+
+            <button class="button download-button" id="double-attack">
+                <strong>Download</strong>
+            </button>
+            <br>
+
+            <h4></h4>
+
+            This plugins adds a custom skill, which allows a unit to attack twice in one turn.
+            It works similar to a normal attack, but once you select the weapon and the target, you can choose again for a weapon and a target.
+            Both the weapons and the targets can be repetade, or you can choose to change either of them.
+            For example: first attack is with Iron Sword to Enemy A, and second attack is with the same Iron Sword against Enemy B.
+
+            <h4>How to use</h4>
+            To make a unit be able to use this command, you need to assing a custom skill with the keyword "DoubleAttack".
+            If the keyword is already used by some other plugin or you want to use a different keyword, you can change it in the _settings.js file.<br>
+            <br>
+            Also, you need to specify which weapon types are compatible with the skill. This means that the skill can only be used with weapons beloning to one of these weapon types.
+            To do this, you need to use custom parameters on said skill. For example: <br>
+            { weaponTypes: [ {id: 1, category: 0}, {id: 2, category: 0} ] }
+            <ul>
+                <li>
+                    "weaponTypes" is the list of the compatible weapon types.
+                </li>
+                <li>
+                    "id" refers to the weapon type's ID
+                </li>
+                <li>
+                    "category" is the weapon category used by the engine: 0 is Fighters, 1 is Archers and 2 is Mages.
+                </li>
+            </ul>
+
+            In this example, assuming that the project uses default data, this skill would be only compatible with the weapon types Lance and Axe.
+
+            <h4>Settings</h4>
+            There are some things you can change in the _settings.js file:
+            <ul>
+                <li>
+                    Name of the command.
+                </li>
+                <li>
+                    Name of the skill custom keyword, as explained above.
+                </li>
+                <li>
+                    Messages of each information window: one for first weapon, one for first target, one for second weapon and one for second target.
+                </li>
+                <li>
+                    Width of the information window. The default messages fit correctly in the window, but if you change those messages you can also
+                    change the width of this window to make sure the message doesn't go over the window.
+                </li>
+            </ul>
+            
+            <br>
+            <em>
+                Version 1.0 <br>
+                Last updated: April 4, 2020
+            </em>
+        </div>
+
+        <div class="even-item">
+            <a href="#start" id="plugin17" class="generic-link">Go back</a>
             <h2>Enemy Display</h2>
 
             <button class="button download-button" id="enemy-display">
@@ -374,7 +439,7 @@
             </em>
         </div>
 
-        <div class="even-item">
+        <div class="uneven-item">
             <a href="#start" id="plugin6" class="generic-link">Go back</a>
             <h2>FE GBA Battle Formula</h2>
 
@@ -414,7 +479,7 @@
             </em>
         </div>
 
-        <div class="uneven-item">
+        <div class="even-item">
             <a href="#start" id="plugin7" class="generic-link">Go back</a>
             <h2>HP Cost for Weapons and Items</h2>
 
@@ -446,7 +511,7 @@
 
         </div>
 
-        <div class="even-item">
+        <div class="uneven-item">
             <a href="#start" id="plugin8" class="generic-link">Go back</a>
             <h2>Hybrid Weapons</h2>
 
@@ -488,7 +553,7 @@
 
         </div>
 
-        <div class="uneven-item">
+        <div class="even-item">
             <a href="#start" id="plugin9" class="generic-link">Go back</a>
             <h2>Learnable Skills by Class</h2>
 
@@ -518,7 +583,7 @@
             </em>
         </div>
 
-        <div class="even-item">
+        <div class="uneven-item">
             <a href="#start" id="plugin10" class="generic-link">Go back</a>
             <h2>Neutral Faction</h2>
 
@@ -531,7 +596,7 @@
             </button>
         </div>
 
-        <div class="uneven-item">
+        <div class="even-item">
             <a href="#start" id="plugin11" class="generic-link">Go back</a>
             <h2>Range Modifiers</h2>
 
@@ -570,7 +635,7 @@
 
         </div>
 
-        <div class="even-item">
+        <div class="uneven-item">
             <a href="#start" id="plugin12" class="generic-link">Go back</a>
             <h2>Restricted Weapon Attack Count</h2>
 
@@ -595,7 +660,7 @@
             </em>
         </div>
 
-        <div class="uneven-item">
+        <div class="even-item">
             <a href="#start" id="plugin13" class="generic-link">Go back</a>
             <h2>Skills Pack</h2>
 
@@ -843,7 +908,7 @@
             </em>
         </div>
 
-        <div class="even-item">
+        <div class="uneven-item">
             <a href="#start" id="plugin14" class="generic-link">Go back</a>
             <h2>Traits System</h2>
 
@@ -925,7 +990,7 @@
             </em>
         </div>
 
-        <div class="uneven-item">
+        <div class="even-item">
             <a href="#start" id="plugin15" class="generic-link">Go back</a>
             <h2>Weapon Ranks System</h2>
 
@@ -1020,7 +1085,7 @@
 
         </div>
 
-        <div class="even-item">
+        <div class="uneven-item">
             <a href="#start" id="plugin16" class="generic-link">Go back</a>
             <h2>Weapons and Items as Original Data</h2>
 
