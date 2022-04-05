@@ -34,6 +34,7 @@ document.getElementById("combat-arts").addEventListener("click", function() {
     filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Combat%20Art/config.js"))
     filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Combat%20Art/stat-stamina-eventcommand.js"))
     filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Combat%20Art/stat-stamina.js"))
+    filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Combat%20Art/ca-itemteach.js"))
     downloadPlugin(fileName, filesToZip)
 })
 
@@ -219,6 +220,7 @@ document.getElementById("original-data").addEventListener("click", function() {
     filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Weapons%20and%20Items%20as%20Original%20Data/magic-control.js"))
     filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Weapons%20and%20Items%20as%20Original%20Data/magic-eventcommand.js"))
     filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Weapons%20and%20Items%20as%20Original%20Data/magic-window.js"))
+    filesToZip.push(fetch("https://raw.githubusercontent.com/Goinza/Plugins-for-SRPG-Studio/master/Weapons%20and%20Items%20as%20Original%20Data/magic-itemteach.js"))
     downloadPlugin(fileName, filesToZip)
 })
 
